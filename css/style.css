@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: #161414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #000000;
+    height: 5rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.titulo {
+    color: #33d954;
+    font-size: 3rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+table {
+    background-color: #ffff;
+    width: 30%;
+    height: 300px;
+    border-radius: 0.2rem;
+    box-shadow: 10px 20px #33d954;
+}
+
+td {
+    text-align: center;
+}
+
+.adm {
+    width: 65%;
+    margin-left: 5%;
+    /*background-color: rgb(0, 0, 0);*/
+}
+
+.rowAdm1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+form {
+    border: 1px solid #33d954;
+    border-radius: 0.3rem;
+    color: #ffff;
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 5px 10px #33d954;
+}
+
+.formSorteioTime {
+    width: 40%;
+    float: right;
+}
+
+form p {
+    color: #33d954;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+input {
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.btnEnviar {
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    font-weight: bold;
+    width: 30%;
+    margin-left: 35%;
+    border: 1px solid;
+}
+
+.btnEnviar:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+    background-color: #000000;
+    color: #33d954;
+    border: 1px solid #33d954;
+}
+
+pre {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.pSorteados {
+    color: #ffff;
+    position: absolute;
+}
+
+.btnSortear {
+    width: 50%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.btnSortear:hover {
+    opacity: 0.8;
+    transition: 0.2s;
+    background-color: #000000;
+    color: #33d954;
+}
