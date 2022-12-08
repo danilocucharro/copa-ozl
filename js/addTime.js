@@ -7,6 +7,6 @@ frmTime.addEventListener("submit", (e) => {
     const nomeTime = frmTime.time.value
 
     times.push(nomeTime)
-
+    frmTime.time.value = ""
     console.log(times)
 })
