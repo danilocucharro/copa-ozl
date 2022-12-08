@@ -148,3 +148,36 @@ form:hover {
     -o-transform: translateY(-8px);
     transform: translateY(-8px);
 }
+
+@media (max-width: 1000px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adm {
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+    .rowAdm1 {
+        flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .formAddNome {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .formSorteioTime {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
