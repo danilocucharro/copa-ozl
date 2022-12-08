@@ -1,4 +1,4 @@
-const frm = document.querySelector("#formNome")
+const frmNome = document.querySelector("#formNome")
 const jogadores = []
 
 let pontos = 0
@@ -7,10 +7,10 @@ let vitorias = 0
 let derrotas = 0
 let sg = 0
 
-frm.addEventListener("submit", (e) =>{
+frmNome.addEventListener("submit", (e) =>{
     e.preventDefault()
 
-    const nomeJogador = frm.nome.value
+    const nomeJogador = frmNome.nome.value
 
     jogadores.push({
         nomeJogador,
@@ -21,7 +21,7 @@ frm.addEventListener("submit", (e) =>{
         sg
     })
 
-    frm.nome.value = ""
+    frmNome.nome.value = ""
 
     console.log(jogadores)
 })

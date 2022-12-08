@@ -67,6 +67,15 @@ form {
     padding: 0.5rem;
     box-shadow: 5px 10px #33d954;
     background-color: #000000;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .formSorteioTime {
@@ -138,8 +147,4 @@ form:hover {
     -ms-transform: translateY(-8px);
     -o-transform: translateY(-8px);
     transform: translateY(-8px);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
 }
