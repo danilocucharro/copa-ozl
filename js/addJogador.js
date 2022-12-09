@@ -10,18 +10,22 @@ let sg = 0
 frmNome.addEventListener("submit", (e) =>{
     e.preventDefault()
 
-    const nomeJogador = frmNome.nome.value
+    if(frmNome.nome.value == ""){
+        alert("Insira um nome válido!")
+    }else{
+        const nomeJogador = frmNome.nome.value
 
-    jogadores.push({
-        nomeJogador,
-        pontos,
-        jogos,
-        vitorias,
-        derrotas,
-        sg
-    })
+        jogadores.push({
+            nomeJogador,
+            pontos,
+            jogos,
+            vitorias,
+            derrotas,
+            sg
+        })
 
-    frmNome.nome.value = ""
+        frmNome.nome.value = ""
 
-    console.log(jogadores)
+        console.log(jogadores)
+    }
 })
