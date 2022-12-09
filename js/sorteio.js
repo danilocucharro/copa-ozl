@@ -8,6 +8,8 @@ frmSorteio.addEventListener("submit", (e) =>{
         alert("Nenhum time foi cadastrado ainda!")
     }else{
         const sorteio = Math.floor(Math.random() * times.length)
+        jaFoiSorteado.push(sorteio)
         sorteados.innerText += `${times[sorteio]} \n`
+        console.log(jaFoiSorteado)
     }   
 })
