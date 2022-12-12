@@ -46,16 +46,9 @@ td {
 .adm {
     width: 65%;
     margin-left: 5%;
-}
-
-.rowAdm1 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.rowAdm2 {
-    margin-top: 3rem;
 }
 
 form {
@@ -75,6 +68,7 @@ form {
     -o-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
+    margin-bottom: 3rem;
 }
 
 .formSorteioTime {
@@ -149,7 +143,7 @@ form:hover {
     transform: translateY(-8px);
 }
 
-@media (max-width: 1000px){
+@media (max-width: 450px){
     main{
         display: flex;
         flex-direction: column;
@@ -158,10 +152,6 @@ form:hover {
     .adm {
         margin-top: 3rem;
         width: 90%;
-    }
-
-    .rowAdm1 {
-        flex-direction: column;
     }
 
     .titulo {
@@ -174,11 +164,37 @@ form:hover {
         width: 100%;
     }
 
+    .formAddTime {
+        width: 100%;
+    }
+
     .formSorteioTime {
         width: 100%;
     }
 
     table {
         width: 100%;
+    }
+}
+
+@media (max-width: 850px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .adm {
+        margin-top: 3rem;
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    form {
+        width: 49%;
     }
 }
