@@ -10,9 +10,17 @@ frmSorteio.addEventListener("submit", (e) =>{
     } 
     else{
         sorteio = Math.floor(Math.random() * times.length)
-        jaFoiSorteado.push(sorteio)
-        sorteados.innerText += `${times[sorteio]} \n`
-        console.log(jaFoiSorteado)
-        console.log(sorteio)
+
+        if(jaFoiSorteado.includes(sorteio)){
+            sorteados.innerText +=""
+        }
+        else{
+            jaFoiSorteado.push(sorteio)
+            sorteados.innerText += `${times[sorteio]} \n`
+            console.log("ja foi sorteado: "+ jaFoiSorteado)
+        }
+        if(jaFoiSorteado.length == jogadores.length){
+            frmSorteio.btnSubmitSorteio.disabled = true
+        }
     }
 })
