@@ -92,6 +92,34 @@ input {
     width: 50%;
 }
 
+.formInserirJogo {
+    width: 40%;
+    text-align: left;
+}
+
+.formInserirJogo p {
+    text-align: center;
+}
+
+#inputJogador {
+    margin-bottom: 1rem;
+}
+
+#radioDerrota, #radioVitoria, #radioEmpate{
+    height: 1rem;
+    width: 10%;
+}
+
+#inputGolsFeitos {
+    margin-top: 1rem;
+    width: 20%;
+}
+
+#inputGolsSofridos {
+    margin-top: 1rem;
+    width: 20%;
+}
+
 .btnEnviar {
     margin-top: 1rem;
     cursor: pointer;

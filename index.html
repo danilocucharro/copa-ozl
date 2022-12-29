@@ -23,6 +23,7 @@
                 <th>PTS</th>
                 <th>J</th>
                 <th>VIT</th>
+                <th>E</th>
                 <th>DER</th>
                 <th>SG</th>
             </tr>
@@ -31,6 +32,7 @@
                 <td>12</td>
                 <td>23</td>
                 <td>3</td>
+                <td>5</td>
                 <td>5</td>
                 <td>-9</td>
             </tr>
@@ -54,6 +56,22 @@
                     <input type="submit" id="btnSubmitSorteio" class="btnSortear" value="Sortear">
                     <p class="pSorteados">Sorteados:</p>
                     <pre id="timesSorteados"></pre>
+                </form>
+
+                <form class="formInserirJogo" id="formInserirJogo">
+                    <p>INSERIR JOGO</p>
+                    <b>Jogador: </b><input type="text" id="inputJogador" class=""><br>
+                    <b>Resultado do jogo: </b><br>
+                    <input type="radio" name="resultadoJogo" id="radioVitoria" value="Vitoria">
+                    <label for="Vitoria">Vitória</label><br>
+                    <input type="radio" name="resultadoJogo" id="radioDerrota" value="Derrota">
+                    <label for="Derrota">Derrota</label><br>
+                    <input type="radio" name="resultadoJogo" id="radioEmpate" value="Empate">
+                    <label for="Empate">Empate</label><br>
+                    <b>Gols feitos: </b><input type="text" id="inputGolsFeitos"><br>
+                    <b>Gols sofridos: </b><input type="text" id="inputGolsSofridos">
+                    
+                    <input type="submit" id="btnSubmitResultado" class="btnEnviar" value="Atualizar">
                 </form>
         </div>
     </main>

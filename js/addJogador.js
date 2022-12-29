@@ -4,6 +4,7 @@ const jogadores = []
 let pontos = 0
 let jogos = 0
 let vitorias = 0
+let empates = 0
 let derrotas = 0
 let sg = 0
 
@@ -20,6 +21,7 @@ frmNome.addEventListener("submit", (e) =>{
             pontos,
             jogos,
             vitorias,
+            empates,
             derrotas,
             sg
         })
