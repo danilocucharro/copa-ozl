@@ -101,6 +101,10 @@ input {
     text-align: center;
 }
 
+.formInserirJogo b {
+    font-size: 1.2rem;
+}
+
 #inputJogador {
     margin-bottom: 1rem;
 }
@@ -197,6 +201,10 @@ form:hover {
     }
 
     .formSorteioTime {
+        width: 100%;
+    }
+
+    .formInserirJogo {
         width: 100%;
     }
 
