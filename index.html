@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/soccer.png" type="image/x-icon">
-    <script src="js/addJogador.js" defer></script>
+    <script src="js/jogador.js" defer></script>
     <script src="js/addTime.js" defer></script>
     <script src="js/sorteio.js" defer></script>
     <title>copa ozl</title>
@@ -18,61 +18,56 @@
 
     <main class="container">
         <table>
-            <tr>
+            <thead>
                 <th>JOGADÔ</th>
                 <th>PTS</th>
                 <th>J</th>
                 <th>VIT</th>
                 <th>E</th>
                 <th>DER</th>
-                <th>SG</th>
-            </tr>
-            <tr>
-                <td>danilo</td>
-                <td>12</td>
-                <td>23</td>
-                <td>3</td>
-                <td>5</td>
-                <td>5</td>
-                <td>-9</td>
-            </tr>
+                <th>GP</th>
+                <th>GC</th>
+            </thead>
+            <tbody id="tbody">
+            
+            </tbody>
         </table>
 
         <div class="adm">
-                <form class="formAddNome" id="formNome">
+                <div class="formAddNome card" id="formNome">
                     <p>ADICIONAR JOGADOR</p>
                 <b>Nome:</b> <input type="text" id="nome" autocomplete="off">
-                    <input type="submit" id="btnSubmitNome" class="btnEnviar" value="Adicionar">
-                </form>
+                    <input type="button" onclick="jogador.salvar()" class="btnEnviar" value="Adicionar"/>
+                </div>
     
-                <form class="formAddTime" id="formTime">
+                <div class="formAddTime card" id="formTime">
                     <p>ADICIONAR TIME</p>
                     <b>Time:</b> <input type="text" id="time" autocomplete="off">
                     <input type="submit" id="btnSubmitTime" class="btnEnviar" value="Adicionar">
-                </form>
+                </div>
 
-                <form class="formSorteioTime" id="formSorteio">
+                <div class="formSorteioTime card" id="formSorteio">
                     <p>SORTEAR TIME</p>
                     <input type="submit" id="btnSubmitSorteio" class="btnSortear" value="Sortear">
                     <p class="pSorteados">Sorteados:</p>
                     <pre id="timesSorteados"></pre>
-                </form>
+                </div>
 
-                <form class="formInserirJogo" id="formInserirJogo">
+                <div class="formInserirJogo card" id="formInserirJogo">
                     <p>INSERIR JOGO</p>
                     <b>Jogador: </b><input type="text" id="inputJogador" class=""><br>
                     <b>Resultado do jogo: </b><br>
-                    <input type="radio" name="resultadoJogo" id="radioVitoria" value="Vitoria">
+                        <input type="radio" name="resultadoJogo" id="radioVitoria" value="Vitoria">
                     <label for="Vitoria">Vitória</label><br>
-                    <input type="radio" name="resultadoJogo" id="radioDerrota" value="Derrota">
+                        <input type="radio" name="resultadoJogo" id="radioDerrota" value="Derrota">
                     <label for="Derrota">Derrota</label><br>
-                    <input type="radio" name="resultadoJogo" id="radioEmpate" value="Empate">
+                        <input type="radio" name="resultadoJogo" id="radioEmpate" value="Empate">
                     <label for="Empate">Empate</label><br>
                     <b>Gols feitos: </b><input type="text" id="inputGolsFeitos"><br>
                     <b>Gols sofridos: </b><input type="text" id="inputGolsSofridos">
                     
                     <input type="submit" id="btnSubmitResultado" class="btnEnviar" value="Atualizar">
-                </form>
+                </div>
         </div>
     </main>
 </body>

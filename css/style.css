@@ -51,7 +51,7 @@ td {
     justify-content: space-between;
 }
 
-form {
+.card {
     border: 1px solid #33d954;
     border-radius: 0.3rem;
     color: #ffff;
@@ -77,7 +77,7 @@ form {
     height: 310px;
 }
 
-form p {
+.card p {
     color: #33d954;
     font-size: 24px;
     margin-bottom: 1rem;
@@ -167,7 +167,7 @@ pre {
     color: #33d954;
 }
 
-form:hover {
+.card:hover {
     -webkit-transform: translateY(-8px);
     -moz-transform: translateY(-8px);
     -ms-transform: translateY(-8px);
@@ -230,7 +230,7 @@ form:hover {
         justify-content: space-between;
     }
 
-    form {
+    .card {
         width: 49%;
     }
 }
